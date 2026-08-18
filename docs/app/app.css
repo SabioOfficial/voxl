@@ -34,3 +34,11 @@ button:disabled {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.border-gradient-purple {
+  border-image: linear-gradient(#AB6BDB, #A641F4) 1;
+}
+
+.border-gradient-blue {
+  border-image: linear-gradient(#6B9CDB, #418FF4) 1;
+}
