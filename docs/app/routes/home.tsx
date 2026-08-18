@@ -1,5 +1,7 @@
 import type { Route } from "./+types/home";
 import { Tooltip } from 'react-tooltip';
+import Lenis from 'lenis';
+import { useEffect } from "react";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -9,6 +11,22 @@ export function meta({}: Route.MetaArgs) {
 }
 
 export default function Home() {
+  useEffect(() => {
+    const lenis = new Lenis();
+
+    function raf(time: number) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    const animationFrame = requestAnimationFrame(raf);
+
+    return () => {
+      cancelAnimationFrame(animationFrame);
+      lenis.destroy();
+    };
+  }, []);
+
   return (
     <main>
       <div className="flex flex-row justify-center items-center h-dvh ml-auto mr-auto gap-10 border-3 border-gradient-purple">
