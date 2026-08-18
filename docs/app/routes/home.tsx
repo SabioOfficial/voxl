@@ -9,6 +9,13 @@ export function meta({}: Route.MetaArgs) {
 
 export default function Home() {
   return (
-    <h1 className="text-8xl font-bold text-center">Voxl</h1>
+    <main>
+      <div className="flex flex-row justify-center items-center h-dvh ml-auto mr-auto gap-6">
+        <img src="WideLogo.svg" className="w-auto h-40"></img>
+        <div className="flex flex-col">
+          <p className="text-4xl"><span className="text-highlight text-5xl">The</span> browser extension for Pixl</p>
+        </div>
+      </div>
+    </main>
   );
 }

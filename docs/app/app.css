@@ -6,7 +6,14 @@
 
 html,
 body {
-  background-color: var(--color-taupe-200);
-  color: var(--color-black);
+  background-color: var(--color-taupe-900);
+  color: var(--color-white);
   overflow-x: hidden;
+}
+
+.text-highlight {
+  background: -webkit-linear-gradient(#AB6BDB, #A641F4);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
