@@ -10,10 +10,14 @@ export function meta({}: Route.MetaArgs) {
 export default function Home() {
   return (
     <main>
-      <div className="flex flex-row justify-center items-center h-dvh ml-auto mr-auto gap-6">
+      <div className="flex flex-row justify-center items-center h-dvh ml-auto mr-auto gap-10">
         <img src="WideLogo.svg" className="w-auto h-40"></img>
-        <div className="flex flex-col">
-          <p className="text-4xl"><span className="text-highlight text-5xl">The</span> browser extension for Pixl</p>
+        <div className="flex flex-col gap-3">
+          <p className="text-4xl text-left"><span className="text-highlight text-5xl">The</span> browser extension for Pixl</p>
+          <div className="flex flex-row gap-2">
+            <button type="button" disabled>Coming Soon</button>
+            <a href="https://github.com/SabioOfficial/voxl" target="_blank"><button type="button">Contribute</button></a>
+          </div>
         </div>
       </div>
     </main>
