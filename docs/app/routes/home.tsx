@@ -61,6 +61,10 @@ export default function Home() {
           </p>
         </div>
       </div>
+      <footer className="flex flex-row py-6 border-3 px-12 border-gradient-gray border-t-0">
+        <p>An extension made with ♥ by <a href="https://sabiothedev.xyz/" target="_blank" className="underline underline-offset-3 text-xl">Sabio</a></p>
+        <p className="ml-auto">Endorsed by <b className="text-xl">multiple</b> Pixl orgs!</p>
+      </footer>
     </main>
   );
 }

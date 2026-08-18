@@ -42,3 +42,7 @@ button:disabled {
 .border-gradient-blue {
   border-image: linear-gradient(#6B9CDB, #418FF4) 1;
 }
+
+.border-gradient-gray {
+  border-image: linear-gradient(#A3A3A3, #9A9A9A) 1;
+}
